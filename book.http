@@ -1,0 +1,16 @@
+GRAPHQL http://localhost:8082/graphql
+Content-Type: application/json
+
+query BookDetails{
+  getBookById(id: 2){
+    id
+    name
+    pages
+    author{
+      id
+      name
+    }
+  }
+}
+
+

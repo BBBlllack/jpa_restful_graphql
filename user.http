@@ -1,0 +1,33 @@
+
+GET http://localhost:8082/user/rest/1
+
+###
+
+GET http://localhost:8082/user/rest/users
+
+###
+
+POST http://localhost:8082/user/rest
+Content-Type: application/json
+
+{
+  "username": "zhangsan",
+  "password": "zhang123",
+  "age": 20
+}
+
+###
+
+PUT http://localhost:8082/user/rest
+Content-Type: application/json
+
+{
+  "id": "1",
+  "username": "lisi",
+  "password": "li123",
+  "age": 20
+}
+
+###
+
+DELETE http://localhost:8082/user/rest/2

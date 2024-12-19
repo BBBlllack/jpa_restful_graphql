@@ -1,0 +1,17 @@
+scalar Any
+
+type Query{
+    getBookById(id: ID): Book
+}
+
+type Book{
+    id: ID
+    name: String
+    pages: Int
+    author: Author
+}
+
+type Author{
+    id: ID
+    name: String
+}

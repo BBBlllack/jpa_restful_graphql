@@ -1,0 +1,32 @@
+
+spring:
+  application:
+    name: restful-graphql
+  jackson:
+    default-property-inclusion: non_empty
+    serialization:
+      fail-on-empty-beans: false
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345678
+    url: jdbc:mysql://localhost:3306/restful_graphql?useSSL=false
+  graphql:
+    graphiql:
+      enabled: true
+    path: /graphql
+
+server:
+  port: 8082
+
+
